@@ -1,0 +1,33 @@
+ul.hybridauth-providerlist  {	
+	list-style-type: none;
+}
+
+ul.hybridauth-providerlist li {
+	float:left;
+	text-decoration: none;
+}
+
+.hybridauth-providerlist li.active {
+	background-color:green;
+	margin:5px;
+}
+/*
+     FILE ARCHIVED ON 20:26:56 Mar 16, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:39:58 Jun 14, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.423
+  exclusion.robots: 0.042
+  exclusion.robots.policy: 0.034
+  esindex: 0.008
+  cdx.remote: 13.366
+  LoadShardBlock: 146.005 (3)
+  PetaboxLoader3.datanode: 91.559 (4)
+  PetaboxLoader3.resolve: 143.782 (3)
+  load_resource: 106.419
+*/

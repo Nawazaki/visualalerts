@@ -1,0 +1,249 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-ott-2014, 14.42.51
+    Author     : Antonio
+*/
+
+
+#page-content .top  {
+    margin-top: 100px !important;
+}
+
+.bs-sidenav.menu-navigation {
+    border-radius: 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: 0 1px 5px 1px #E4E6EB;
+    border: 1px solid #E4E6EB;
+    width: 200px;
+    position: fixed;
+    top:10;
+    left: 0;
+
+}
+
+.bs-sidenav.menu-navigation li.active, .bs-sidenav.menu-navigation li a:hover{
+    background-color: #3498DB !important;
+    color: #FFFFFF !important;
+}
+
+
+
+.bs-sidenav.menu-navigation li {
+}
+
+.bs-sidenav.menu-navigation li.active {
+}
+
+.bs-sidenav.menu-navigation li a {
+    color: #333333;
+    background: none !important;
+    transition: all 0.2s ease 0s;
+}
+
+.bs-sidenav.menu-navigation li.active a {
+    color: #FFFFFF;
+}
+
+
+
+.service.service-2 {
+    text-align: left;
+    margin-left: 30px;
+}
+.colored-wrapper .service {
+    border: 2px solid #FFFFFF;
+}
+.service {
+    background-color: #ECF0F1;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    border: 2px solid #FFFFFF;
+}
+
+.service:hover {
+    background-color: #3498DB;
+    box-shadow: 0 0px 5px 3px #E4E6EB;
+    color: #FFFFFF;
+}
+
+.service.service-2 .service-icon {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.service:hover .service-icon {
+    background-color: #2C3E50 !important;
+    color: #FFFFFF;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service:hover .service-icon [class^="fa-"] {
+    animation: 0.5s ease 0s normal forwards 1 toRightFromLeft;
+}
+
+.service:hover .manage {
+    color: #FFFFFF;
+}
+
+.service.service-2 h4 {
+    color: #2C3E50;
+    font-family: 'Open Sans',Helvetica;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.service.service-2 .manage {
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.service:hover h4 {
+    color: #FFFFFF;
+}
+
+
+.service.service-2 p {
+    margin: 0 0 10px;
+}
+
+.service .service-icon .fa {
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -25px;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+}
+
+
+.service .service-icon {
+    background-color: #3498DB;
+    border-radius: 100%;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 50px;
+    height: 100px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    line-height: 90px;
+}
+
+.nav > li > a {
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.ui-datepicker {
+    z-index: 10000 !important;
+}
+
+
+.grid-view-loading
+{
+    background-position: right top;
+}
+
+.grid-view-loading2 {
+
+}
+
+
+.contentColumn2{
+    width: 100%;
+    min-height: 500px;
+}
+
+.gridServiceUser {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid gray;
+}
+
+.gridServiceUser a {
+    color: black;
+}
+
+.titoloServizi {
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nextTitolo{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.nextScadenzaWrapper, .welcomeMessage{
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+    border: 1px solid gray;
+    height: 300px;
+    background-color: #FFFFEE;
+    padding: 15px;
+}
+
+.tooltip {
+    border: 0px !important;
+}
+
+.bluerow{
+    background-color: lightskyblue;
+
+}
+.bluescurorow{
+    background-color: blue;
+    color: white;
+}
+.selected {
+    color: black;
+}
+
+.hybridauth-providerlist{
+    margin: 0px auto;
+    width: 225px;
+    text-align: center;
+}
+.hybridauth-providerlist li {
+    margin: 0px auto;
+    float: none !important;
+    text-align: center;
+}
+/*
+     FILE ARCHIVED ON 19:02:57 Feb 06, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:40:26 Jun 14, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.504
+  exclusion.robots: 0.055
+  exclusion.robots.policy: 0.048
+  esindex: 0.008
+  cdx.remote: 15.238
+  LoadShardBlock: 57.183 (3)
+  PetaboxLoader3.datanode: 170.198 (4)
+  load_resource: 168.978
+  PetaboxLoader3.resolve: 53.386
+*/
