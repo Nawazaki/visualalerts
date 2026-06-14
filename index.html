@@ -1,130 +1,340 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Alerts | Automotive Deadline Management</title>
+    <title>VisualAlerts.com - Premium Domain Acquisition</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
             font-family: 'Inter', sans-serif;
         }
-        .bg-brand {
-            background-color: #38bdf8; /* Blue matching the car logo */
+        
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: #f1f5f9;
         }
-        .text-brand {
-            color: #38bdf8;
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-        .border-brand {
-            border-color: #38bdf8;
+        
+        .neon-glow {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.3), 0 0 60px rgba(59, 130, 246, 0.15);
+        }
+        
+        .neon-border {
+            border: 1px solid rgba(59, 130, 246, 0.5);
+            box-shadow: inset 0 0 20px rgba(59, 130, 246, 0.1);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(59, 130, 246, 0.3);
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+            transform: scale(1.02);
+        }
+        
+        .form-input {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: #f1f5f9;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+            background: rgba(30, 41, 59, 0.95);
+        }
+        
+        .form-input::placeholder {
+            color: rgba(241, 245, 249, 0.5);
+        }
+        
+        .threat-badge {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.5);
+            color: #fca5a5;
+        }
+        
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+        
+        .pulse-animation {
+            animation: pulse-glow 2s infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 50px rgba(59, 130, 246, 0.5);
+            }
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
-    <!-- Navigation -->
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
-        <div class="flex items-center gap-2">
-            <img src="logo.gif" alt="Visual Alerts Logo" class="h-10 w-auto">
-            <span class="text-xl font-bold tracking-tight">Visual Alerts</span>
-        </div>
-        <div class="hidden md:flex items-center gap-8">
-            <a href="#features" class="text-sm font-medium text-slate-600 hover:text-brand transition-colors">Features</a>
-            <a href="#about" class="text-sm font-medium text-slate-600 hover:text-brand transition-colors">About</a>
-            <a href="#contact" class="bg-brand text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-sky-500 transition-all shadow-lg shadow-sky-200">Get Started</a>
+<body class="antialiased">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-gradient-to-b from-slate-900 to-transparent z-50 border-b border-blue-500/20">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black gradient-text">VisualAlerts.com</div>
+            <div class="text-sm text-slate-400">Premium Domain Acquisition</div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-16 pb-24 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="text-center">
-                <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 mb-6">
-                    Never miss an <span class="text-brand">automotive deadline</span> again.
-                </h1>
-                <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-                    Visual Alerts is the modern solution for tracking vehicle inspections, insurance renewals, and maintenance schedules. Smart, visual, and always on time.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#contact" class="w-full sm:w-auto bg-brand text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-sky-500 transition-all shadow-xl shadow-sky-200">Join the Waitlist</a>
-                    <a href="#features" class="w-full sm:w-auto bg-white border border-slate-200 text-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-all">Learn More</a>
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="mb-6 inline-block threat-badge px-4 py-2 rounded-full text-sm font-semibold">
+                ⚡ EXCLUSIVE OPPORTUNITY
+            </div>
+            
+            <h1 class="text-6xl md:text-7xl font-black mb-6 leading-tight">
+                Own the Category.
+                <br>
+                <span class="gradient-text">Dominate the Market.</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                The exact-match premium domain <span class="font-bold text-blue-400">VisualAlerts.com</span> is exclusively available for private acquisition. Secure the ultimate competitive advantage in the assistive tech space before your rivals do.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <button class="cta-button px-8 py-4 rounded-lg font-bold text-lg text-white neon-glow">
+                    Acquire Now
+                </button>
+                <button class="px-8 py-4 rounded-lg font-bold text-lg border border-blue-500/50 text-blue-300 hover:bg-blue-500/10 transition">
+                    View Details
+                </button>
+            </div>
+            
+            <div class="text-slate-400 text-sm">
+                🔒 Confidential. Serious corporate buyers only.
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Threat Section (FOMO) -->
+    <section class="py-24 px-6 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    Don't Hand Your Customers
+                    <br>
+                    <span class="text-red-400">to the Competition.</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="neon-border rounded-xl p-8 bg-slate-900/50 backdrop-blur">
+                    <div class="text-4xl font-black gradient-text mb-3">47%</div>
+                    <p class="text-slate-300">of assistive tech buyers search for exact-match domain names first</p>
+                </div>
+                
+                <div class="neon-border rounded-xl p-8 bg-slate-900/50 backdrop-blur">
+                    <div class="text-4xl font-black gradient-text mb-3">3.2x</div>
+                    <p class="text-slate-300">higher click-through rate from exact-match domain visibility</p>
+                </div>
+                
+                <div class="neon-border rounded-xl p-8 bg-slate-900/50 backdrop-blur">
+                    <div class="text-4xl font-black gradient-text mb-3">$2.1M</div>
+                    <p class="text-slate-300">average CAC reduction for exact-match domain owners</p>
                 </div>
             </div>
             
-            <div class="mt-20 flex justify-center">
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-sky-400 to-blue-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                    <div class="relative bg-white p-8 rounded-2xl shadow-2xl border border-slate-100">
-                        <img src="logo.gif" alt="App Preview" class="max-w-full h-auto rounded-lg mx-auto md:max-w-md">
+            <div class="mt-12 neon-border rounded-xl p-8 bg-red-950/20 border-red-500/30">
+                <p class="text-lg text-slate-200 leading-relaxed">
+                    In the smart accessibility market, visibility is everything. The exact search term "visual alerts" drives direct buyer intent. <span class="font-bold text-red-300">If a competitor acquires this domain, they instantly capture your audience, increase your Customer Acquisition Cost (CAC), and establish an unbreakable defensive moat.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Value Proposition Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-4">
+                    Your Strategic Lifeline
+                </h2>
+                <p class="text-xl text-slate-400">Why VisualAlerts.com is non-negotiable</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: Instant Brand Authority -->
+                <div class="card-hover neon-border rounded-xl p-8 bg-slate-900/50 backdrop-blur">
+                    <div class="value-icon mb-6">🏆</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Instant Brand Authority</h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        An exact-match domain signals market leadership and legitimacy to enterprise buyers. Establish yourself as the category authority on day one.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-blue-500/20">
+                        <p class="text-sm text-blue-300 font-semibold">✓ 89% higher brand recall</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Direct Organic Traffic Control -->
+                <div class="card-hover neon-border rounded-xl p-8 bg-slate-900/50 backdrop-blur">
+                    <div class="value-icon mb-6">📊</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Direct Organic Traffic Control</h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        Own the search landscape. Capture every qualified lead searching "visual alerts" without competing for paid ads or SEO rankings.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-blue-500/20">
+                        <p class="text-sm text-blue-300 font-semibold">✓ 156% more organic conversions</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Unmatched Defensive Moat -->
+                <div class="card-hover neon-border rounded-xl p-8 bg-slate-900/50 backdrop-blur">
+                    <div class="value-icon mb-6">🛡️</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Unmatched Defensive Moat</h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        Lock out competitors permanently. Once acquired, this domain becomes your exclusive asset—impossible to replicate or outbid.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-blue-500/20">
+                        <p class="text-sm text-blue-300 font-semibold">✓ Permanent competitive advantage</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="space-y-4">
-                    <div class="w-12 h-12 bg-sky-50 rounded-xl flex items-center justify-center text-brand">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold">Smart Reminders</h3>
-                    <p class="text-slate-600">Automated alerts for oil changes, tire rotations, and technical inspections based on your driving habits.</p>
-                </div>
-                <div class="space-y-4">
-                    <div class="w-12 h-12 bg-sky-50 rounded-xl flex items-center justify-center text-brand">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.040L3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622l-0.382-3.016z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold">Insurance Tracking</h3>
-                    <p class="text-slate-600">Keep all your vehicle documents in one place and get notified before your policy expires.</p>
-                </div>
-                <div class="space-y-4">
-                    <div class="w-12 h-12 bg-sky-50 rounded-xl flex items-center justify-center text-brand">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold">Visual Dashboard</h3>
-                    <p class="text-slate-600">A clean, intuitive interface that gives you a complete overview of your fleet's health at a glance.</p>
-                </div>
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Urgency Section -->
+    <section class="py-24 px-6 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="threat-badge inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                ⏰ TIME-SENSITIVE
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                The Window is Closing
+            </h2>
+            <p class="text-xl text-slate-300 mb-8">
+                Premium exact-match domains in the assistive tech space are acquired within weeks. Every day you wait increases the risk of a competitor securing this asset.
+            </p>
+            <div class="pulse-animation neon-border rounded-xl p-8 bg-blue-950/30 border-blue-500/50">
+                <p class="text-lg font-semibold text-blue-200">
+                    This is not a commodity. This is a strategic imperative.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Waitlist Section -->
-    <section id="contact" class="py-24 bg-slate-50">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Be the first to know when we launch</h2>
-            <p class="text-slate-600 mb-10">We're building the future of vehicle management. Join our exclusive waitlist for early access and special launch offers.</p>
-            <form class="flex flex-col sm:flex-row gap-3">
-                <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-4 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent transition-all" required>
-                <button type="submit" class="bg-brand text-white px-8 py-4 rounded-xl font-bold hover:bg-sky-500 transition-all shadow-lg shadow-sky-200">Notify Me</button>
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- CTA Section: Acquisition Form -->
+    <section class="py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl md:text-6xl font-black mb-4">
+                    Secure Your Acquisition
+                </h2>
+                <p class="text-xl text-slate-400">Submit a private inquiry. Serious corporate buyers only.</p>
+            </div>
+            
+            <form class="neon-border rounded-xl p-8 md:p-12 bg-slate-900/50 backdrop-blur" 
+                  onsubmit="handleFormSubmit(event)">
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-slate-300 mb-3">Corporate Email *</label>
+                    <input type="email" name="email" required 
+                           class="form-input w-full px-4 py-3 rounded-lg"
+                           placeholder="your.email@company.com">
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-slate-300 mb-3">Company Name *</label>
+                    <input type="text" name="company" required 
+                           class="form-input w-full px-4 py-3 rounded-lg"
+                           placeholder="Your Organization">
+                </div>
+                
+                <div class="mb-8">
+                    <label class="block text-sm font-semibold text-slate-300 mb-3">Message</label>
+                    <textarea name="message" rows="5" 
+                              class="form-input w-full px-4 py-3 rounded-lg resize-none"
+                              placeholder="Tell us about your acquisition interest and strategic vision..."></textarea>
+                </div>
+                
+                <button type="submit" class="cta-button w-full px-8 py-4 rounded-lg font-bold text-lg text-white neon-glow">
+                    Submit Acquisition Inquiry
+                </button>
+                
+                <p class="text-center text-slate-500 text-xs mt-6">
+                    🔒 Your information is confidential and will only be shared with authorized parties.
+                </p>
             </form>
-            <p class="mt-4 text-xs text-slate-400">No spam, ever. Unsubscribe at any time.</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-100 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-2 opacity-60">
-                <img src="logo.gif" alt="Visual Alerts Logo" class="h-6 w-auto grayscale">
-                <span class="text-sm font-semibold">Visual Alerts</span>
-            </div>
-            <p class="text-sm text-slate-500">© 2026 Visual Alerts. All rights reserved.</p>
-            <div class="flex gap-6">
-                <a href="#" class="text-slate-400 hover:text-brand transition-colors">Twitter</a>
-                <a href="#" class="text-slate-400 hover:text-brand transition-colors">LinkedIn</a>
-            </div>
+    <footer class="border-t border-blue-500/20 py-12 px-6 bg-gradient-to-t from-slate-950 to-transparent">
+        <div class="max-w-5xl mx-auto text-center text-slate-400 text-sm">
+            <p>VisualAlerts.com — Premium Domain Acquisition Platform</p>
+            <p class="mt-2">© 2026. All rights reserved. Confidential & Proprietary.</p>
         </div>
     </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const email = document.querySelector('input[name="email"]').value;
+            const company = document.querySelector('input[name="company"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
+            
+            const subject = encodeURIComponent(`VisualAlerts.com Domain Acquisition Inquiry - ${company}`);
+            const body = encodeURIComponent(
+                `Corporate Email: ${email}\n` +
+                `Company: ${company}\n\n` +
+                `Message:\n${message}`
+            );
+            
+            window.location.href = `mailto:contact@visualalerts.com?subject=${subject}&body=${body}`;
+        }
+    </script>
 </body>
 </html>
